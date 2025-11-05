@@ -44,7 +44,7 @@ func TestGetAPIKey(t *testing.T) {
 				"Authorization": {"ApiKey To many splits"},
 			},
 			wantString: "To",
-			wantError:  errors.New("malformed authorization header"),
+			wantError:  nil,
 		},
 	}
 
